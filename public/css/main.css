@@ -1,37 +1,97 @@
 *{
     left: 0;
     right: 0;
-    padding 0;
+    padding: 0;
+    border: 0;
 }
-.nav-header{
-    background-color: #FFFFFF;
+body{
+    background: #666;
+
+}
+.navbar{
+	width: 100%;
+	background:#fff;
+    z-index: 1;
     position: fixed;
-    top: 0;
-    right: 0;
-    height: 65px;
-    border-bottom: 2px solid #e5e5e5;
-    transition: all 0.6s ease;
 }
-ul.nav-menu li{
-    list-style: none;
-    padding: 0px;
+ul{
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+}
+/*.ul-navbar{
+    padding-left: 420px;
+}*/
+ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 18px;
+}
+
+ul li a{
+	color: rgb(58, 15, 138);
+	text-decoration: none;
+	list-style-type: none;
+}
+ul li a:hover{
+	text-decoration: none;
+}
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: #fff;
+	text-align: right;
+	box-sizing: border-box;
+	color: rgb(69, 11, 102);
+	font-size: 30px;
+	display: none;
+}
+
+.logo-brand{
+    position: absolute;
+    width: 209px;
+    top: 5px;
+    left: 54px;
+}
+
+.booking-now{
+    position:absolute;
+    bottom: 50%;
+}
+
+#carouselExampleControls {
     position: relative;
-    cursor: pointer;
-    display: inline;
-    line-height: 50px; 
-}
+  }
 
+  .carousel-controls {
+    bottom:500px;
+    position: absolute;
+  }
 
+  .carousel-ul {
+    position: absolute;
+    list-style-type: none;
+    padding:500px;
+  }
 
-ul.nav-menu li a{
-    color: #ccc;
-    text-decoration: none;
-    -webkit-transition: 0.2s;
-    -moz-transition :0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
+ /*resnponsive*/   
+ @media(max-width: 768px ){
+	.toggle{
+		display: block;
+	}
 
-}
-ul.nav-menu li a:hover {
-    color: #40C4FF;
+	ul{
+		width: 100%;
+		display: none;
+	}
+	ul li{
+		display: block;
+		text-align: center;
+	}
+    .active{
+		display: block;
+    }
+    .logo-brand{
+        left: 36%;
+    }
 }
