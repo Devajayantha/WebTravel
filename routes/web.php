@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 // test uji coba
-Route::get('/main', function () {
+Route::get('/', function () {
     return view('main.index');
 });
 

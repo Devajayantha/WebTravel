@@ -5,8 +5,7 @@
     border: 0;
 }
 body{
-    background: #666;
-
+    background: #f0f0f0;
 }
 .navbar{
 	width: 100%;
@@ -15,13 +14,14 @@ body{
     position: fixed;
 }
 ul{
-	width: 50%;
+	width: 90%;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0px 0px 0px 200px;
 }
 /*.ul-navbar{
     padding-left: 420px;
 }*/
+
 ul li {
 	list-style: none;
 	display: inline-block;
@@ -74,7 +74,28 @@ ul li a:hover{
     padding:500px;
   }
 
- /*resnponsive*/   
+ /*signup & login*/
+ .card{
+ 	margin-top: 100px;
+    background: #fff;
+    border-radius: 0px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+ }
+
+ .card-header{
+ 	font-size: 24px;
+ 	text-align: center;
+ }
+
+ button[name="buttonLogin"]{
+	width: 100%;
+	/*border-radius: 0px;*/
+ }
+
+ /*responsive*/   
  @media(max-width: 768px ){
 	.toggle{
 		display: block;
